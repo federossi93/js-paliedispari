@@ -7,4 +7,26 @@
 //funzione per generare un numero da 1 a 5
 //sommare i 2 risultati e vedere se il risultatro sommato è pari o dispai
 
+var pariDispari = prompt('pari o dispari ?')
+console.log(pariDispari);
 
+var numeroSelezionato = prompt('Inserisci un numero da 1 a 5')
+console.log(numeroSelezionato);
+
+function generateRandomNumber(min, max) {
+return Math.floor(Math.random() * (max - min)) + min;
+}
+
+const numeroRandom = generateRandomNumber(1, 5);
+console.log(numeroRandom);
+
+const somma = numeroSelezionato + numeroRandom
+
+
+if(somma  % 2 === 0){
+    console.log('la somma dei numeri è pari');
+    console.log('hai vinsto');
+}else{
+    console.log('la somma dei numeri è dispari');
+    console.log('hai perso');
+}
