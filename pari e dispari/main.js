@@ -23,10 +23,22 @@ console.log(numeroRandom);
 const somma = numeroSelezionato + numeroRandom
 
 
-if(somma  % 2 === 0){
-    console.log('la somma dei numeri è pari');
+function risultatoSomma(int) {
+    if(somma  % 2 === 0){
+        console.log('la somma dei numeri è pari');
+    }else{
+        console.log('la somma dei numeri è dispari');
+    }
+}
+
+risultatoSomma()
+
+
+
+if(pariDispari === 'pari' && somma %2 == 0){
     console.log('hai vinto');
+}else if(pariDispari === 'dispari' && somma %2 !== 0){
+    console.log('hai perso');
 }else{
-    console.log('la somma dei numeri è dispari');
     console.log('hai perso');
 }
