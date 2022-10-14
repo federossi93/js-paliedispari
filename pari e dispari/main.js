@@ -10,7 +10,7 @@
 var pariDispari = prompt('pari o dispari ?')
 console.log(pariDispari);
 
-var numeroSelezionato = prompt('Inserisci un numero da 1 a 5')
+var numeroSelezionato = Number(prompt('Inserisci un numero da 1 a 5'))
 console.log(numeroSelezionato);
 
 function generateRandomNumber(min, max) {
@@ -25,7 +25,7 @@ const somma = numeroSelezionato + numeroRandom
 
 if(somma  % 2 === 0){
     console.log('la somma dei numeri è pari');
-    console.log('hai vinsto');
+    console.log('hai vinto');
 }else{
     console.log('la somma dei numeri è dispari');
     console.log('hai perso');
