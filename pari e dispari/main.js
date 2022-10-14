@@ -38,7 +38,7 @@ risultatoSomma()
 if(pariDispari === 'pari' && somma %2 == 0){
     console.log('hai vinto');
 }else if(pariDispari === 'dispari' && somma %2 !== 0){
-    console.log('hai perso');
+    console.log('hai vinto');
 }else{
     console.log('hai perso');
 }
